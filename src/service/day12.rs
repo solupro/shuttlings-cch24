@@ -2,7 +2,6 @@ use actix_web::{web, HttpResponse};
 use rand::rngs::StdRng;
 use rand::{Rng, SeedableRng};
 use serde::Deserialize;
-use serde_repr::{Deserialize_repr, Serialize_repr};
 use std::str::FromStr;
 use std::sync::Arc;
 use std::{fmt, sync};
@@ -18,16 +17,6 @@ enum Cell {
     Cookie,
     Milk,
 }
-
-#[derive(Clone, Copy, Serialize_repr, Deserialize_repr)]
-#[repr(u8)]
-enum Column {
-    One = 1,
-    Two = 2,
-    Three = 3,
-    Four = 4,
-}
-
 impl From<bool> for Cell {
     fn from(b: bool) -> Self {
         if b {
