@@ -1,0 +1,12 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "TRUNCATE quotes;",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": []
+  },
+  "hash": "330822d70e2cdb144fa42d9d7b9cd11780fafecce247b8e93eeb7c1252dd7c4f"
+}

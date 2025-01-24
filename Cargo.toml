@@ -1,0 +1,24 @@
+[package]
+name = "shuttlings-cch24"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.3.1"
+shuttle-actix-web = "0.49.0"
+shuttle-runtime = "0.49.0"
+actix-files = "0.6.2"
+actix-multipart = "0.4"
+tokio = "1.26.0"
+serde = { version = "1.0.215", features = ["derive"] }
+toml = "0.7.6"
+serde_yaml = "0.9.25"
+cargo-manifest = "0.17.0"
+askama_escape = "0.10.1"
+hex = "0.4.3"
+futures = "0.3.28"
+shuttle-shared-db = { version = "0.49.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.8.2", features = ["chrono", "postgres", "uuid"] }
+rand = "0.8.5"
+jsonwebtoken="9.3.0"
+serde_repr = "0.1.19"
